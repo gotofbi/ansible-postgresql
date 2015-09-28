@@ -5,7 +5,7 @@ dependencies:
     repository_url: "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
   - role: telusdigital.logrotate
     logrotate_name: postgresql
-  - role: telusdigital.fluentd
+  - role: gotofbi.fluentd
     fluentd_config_name: postgresql
     fluentd_sources:
       - path: "{{ postgresql_log_path }}"
